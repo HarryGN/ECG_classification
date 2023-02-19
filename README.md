@@ -89,6 +89,8 @@ This Docker image installs ONNX and ONNX Runtime for ARM 64. It is based on the 
 2. Build the Docker image: `docker build -t onnxruntime-arm64 .`
 3. Run the Docker container: `docker run -it onnxruntime-arm64`
 
+## Hardware:
+To detect and correctly amplify heart signal to feed into the AI-based network, a analog sensor is designed based on the classical 3-opamp instramentation.  
 ## Dockerfile
 
 The Dockerfile for this image can be found in the official [ONNX Runtime GitHub repository](https://github.com/microsoft/onnxruntime/blob/main/dockerfiles/ARM64/Dockerfile). It installs the required dependencies, builds ONNX Runtime from source, and installs it system-wide.
