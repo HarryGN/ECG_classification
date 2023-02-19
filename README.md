@@ -96,6 +96,9 @@ The overall schematic of the ECG amplifier:
 <img width="624" alt="image" src="https://user-images.githubusercontent.com/83996780/219960902-65e7ff98-df46-4ea0-8aad-e65cd82d853d.png">
 
 The team also come up with an approximated model for human body, encorporating left and right atrium and a drivien right leg circuit
+
+<img width="567" alt="image" src="https://user-images.githubusercontent.com/83996780/219967482-d13f1db6-646b-4f3e-b0b8-4a6fad7122a1.png">
+
 ## Dockerfile
 
 The Dockerfile for this image can be found in the official [ONNX Runtime GitHub repository](https://github.com/microsoft/onnxruntime/blob/main/dockerfiles/ARM64/Dockerfile). It installs the required dependencies, builds ONNX Runtime from source, and installs it system-wide.
