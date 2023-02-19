@@ -91,6 +91,11 @@ This Docker image installs ONNX and ONNX Runtime for ARM 64. It is based on the 
 
 ## Hardware:
 To detect and correctly amplify heart signal to feed into the AI-based network, a analog sensor is designed based on the classical 3-opamp instramentation.  
+The overall schematic of the ECG amplifier:
+
+<img width="624" alt="image" src="https://user-images.githubusercontent.com/83996780/219960902-65e7ff98-df46-4ea0-8aad-e65cd82d853d.png">
+
+
 ## Dockerfile
 
 The Dockerfile for this image can be found in the official [ONNX Runtime GitHub repository](https://github.com/microsoft/onnxruntime/blob/main/dockerfiles/ARM64/Dockerfile). It installs the required dependencies, builds ONNX Runtime from source, and installs it system-wide.
