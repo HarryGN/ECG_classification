@@ -31,14 +31,14 @@ TX is digital pin 3 (connect to RX of other device)
 */
  
 #include <SoftwareSerial.h>
+int analog_pin = A0;
+int val = 0;
 SoftwareSerial mySerial(2, 3); // RX, TX
-pinMode(A0, INPUT);
  
 unsigned char yes = '0b1';
 unsigned char no = '0b0';
 void setup()
 {
-  pinMode(5, INPUT);
   mySerial.begin(115200);
  
  
@@ -46,10 +46,11 @@ void setup()
  
 void loop()
 {
-    if (analogRead(A0) > 500)
+    val = analogRead(analog_pin);
+    if (val > 500)
       mySerial.write(yes);
     else
-      mySerial.write(no)
+      mySerial.write(no);
     delay(100);
 
 
